@@ -1,0 +1,56 @@
+server:
+  servlet:
+    path: /moc
+  
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 1qaz2wsx
+    url: jdbc:mysql://47.104.149.123/kky?characterEncoding=utf-8&useSSL=false
+    type: com.alibaba.druid.pool.DruidDataSource
+    #初始化大小，最小，最大
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    #配置获取连接等待超时的时间
+    maxWait: 60000
+    #配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+    timeBetweenEvictionRunsMillis: 60000
+    # 配置一个连接在池中最小生存的时间，单位是毫秒
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    # 配置监控统计拦截的filters,去掉监控界面sql无法统计，‘wall’用于防火墙
+    filters: stat,wall
+    maxPoolPreparedStatementPerConnectionSize: 20
+    userGlobalDataSourceStat: true
+    # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+  redis:
+    host: 192.168.30.113
+    port: 6379
+#  jackson:
+#    default-property-inclusion: non_null
+
+mybatis: 
+  #mapper-locations: classpath:mybatis/mapper/*.xml
+  mapper-locations: classpath:com/moc/*/mapper/*.xml
+  config-location: classpath:mybatis/mybatis-config.xml
+  
+wechat:
+  mpAppId: wxd898fcb01713c658
+  mpAppSecret: 47ccc303338cee6e62894fxxxxxxxxxxx
+  openAppId: wx6ad144e54af67d87
+  openAppSecret: 91a2ff6d38a2bbccfb7e9f9079108e2e
+  mchId: 1483469312
+  mchKey: 06C56A89949D617xxxxxxxxxxx
+  keyPath: /var/weixin_cert/h5.p12
+  notifyUrl: http://sell.natapp4.cc/sell/pay/notify
+  templateId:
+    orderStatus: e-Cqq67QxD6YNI41iRiqawEYdFavW_7pc7LyEMb-yeQ
+  
+  

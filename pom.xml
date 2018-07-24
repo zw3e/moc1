@@ -36,6 +36,11 @@
 			<scope>test</scope>
 		</dependency>
 		
+		<!-- <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-cache</artifactId>
+		</dependency> -->
+		
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -52,23 +57,46 @@
             <artifactId>lombok</artifactId>
         </dependency>
 		
-		
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
 			<artifactId>mybatis-spring-boot-starter</artifactId>
 			<version>1.3.2</version>		
 		</dependency>
 	
+		<dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>fastjson</artifactId>
+		    <version>1.2.47</version>
+		</dependency>
 	
-	
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        
+        
 		<dependency>
 			  <groupId>com.github.binarywang</groupId>
 			  <artifactId>weixin-java-mp</artifactId>
 			  <version>3.0.0</version>
 		</dependency>
+		
+        <dependency>  
+		    <groupId>org.springframework.boot</groupId>  
+		    <artifactId>spring-boot-starter-aop</artifactId>  
+		</dependency>
+		
+        <dependency>
+         	<groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-devtools</artifactId>
+		 	<optional>true</optional>
+        </dependency>
+        
+        
 	</dependencies>
 
 	<build>
+		<finalName>moc</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
