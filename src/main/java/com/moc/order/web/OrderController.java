@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.validation.Valid;
 
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
@@ -29,6 +30,7 @@ import lombok.extern.slf4j.Slf4j;
 public class OrderController {
 	
 
+	//Logger log = Log
 	
 	@Autowired
 	private OrderService orderService;
