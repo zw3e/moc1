@@ -18,7 +18,7 @@ import com.moc.common.ResultVO;
 import com.moc.common.Constant.Constant;
 import com.moc.common.exception.MocException;
 import com.moc.common.page.Page;
-import com.moc.order.DTO.OrderDTO;
+import com.moc.order.entity.DTO.OrderDTO;
 import com.moc.order.service.OrderService;
 import com.moc.user.VO.UserVO;
 

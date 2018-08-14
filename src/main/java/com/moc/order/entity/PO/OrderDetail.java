@@ -1,4 +1,4 @@
-package com.moc.order.entity;
+package com.moc.order.entity.PO;
 
 import java.math.BigDecimal;
 

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.moc.common.utils.KeyUtil;
-import com.moc.order.entity.Order;
+import com.moc.order.entity.PO.Order;
 import com.moc.order.mapper.OrderMapper;
 import com.moc.order.service.OrderService;
 

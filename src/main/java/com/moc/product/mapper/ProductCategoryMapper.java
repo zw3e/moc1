@@ -2,7 +2,7 @@ package com.moc.product.mapper;
 
 import java.util.List;
 
-import com.moc.product.entity.ProductCategoryEntity;
+import com.moc.product.entity.PO.ProductCategoryEntity;
 
 public interface ProductCategoryMapper {
 

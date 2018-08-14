@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.moc.product.entity.ProductCategoryEntity;
+import com.moc.product.entity.PO.ProductCategoryEntity;
 import com.moc.product.mapper.ProductCategoryMapper;
 
 import lombok.extern.slf4j.Slf4j;

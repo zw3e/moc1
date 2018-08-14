@@ -2,7 +2,7 @@ package com.moc.order.mapper;
 
 import java.util.List;
 
-import com.moc.order.entity.Order;
+import com.moc.order.entity.PO.Order;
 
 public interface OrderMapper {
 

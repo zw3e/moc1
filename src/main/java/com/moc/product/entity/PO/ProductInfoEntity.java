@@ -1,4 +1,4 @@
-package com.moc.product.entity;
+package com.moc.product.entity.PO;
 
 import lombok.Data;
 

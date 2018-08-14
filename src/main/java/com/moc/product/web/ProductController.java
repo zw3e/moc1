@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.moc.common.ResultInfoUtil;
 import com.moc.common.ResultVO;
-import com.moc.product.VO.ProductInfoVO;
-import com.moc.product.entity.ProductCategoryEntity;
+import com.moc.product.entity.PO.ProductCategoryEntity;
+import com.moc.product.entity.VO.ProductInfoVO;
 import com.moc.product.mapper.ProductCategoryMapper;
 
 @RestController

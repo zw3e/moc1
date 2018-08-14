@@ -1,6 +1,6 @@
 package com.moc.order.service;
 
-import com.moc.order.entity.Order;
+import com.moc.order.entity.PO.Order;
 
 public interface OrderService {
 

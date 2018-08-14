@@ -1,4 +1,4 @@
-package com.moc.order.VO;
+package com.moc.order.entity.VO;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

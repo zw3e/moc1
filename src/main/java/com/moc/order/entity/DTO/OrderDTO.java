@@ -1,4 +1,4 @@
-package com.moc.order.DTO;
+package com.moc.order.entity.DTO;
 
 import java.util.Date;
 
