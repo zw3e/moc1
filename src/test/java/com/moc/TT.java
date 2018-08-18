@@ -1,7 +1,5 @@
 package com.moc;
 
-import com.moc.common.Constant.ConstantEnum;
-
 public class TT {
 
 	public static void main(String[] args) {
@@ -9,7 +7,7 @@ public class TT {
 
 		System.out.println(100 * 0.8);
 		
-		ConstantEnum.PRODUCT_STOCK_ERROR.getMessage();
+		//ConstantEnum.PRODUCT_STOCK_ERROR.getMessage();
 	}
 
 }

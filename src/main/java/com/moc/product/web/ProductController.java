@@ -1,17 +1,11 @@
 package com.moc.product.web;
 
-import java.util.List;
-
-import org.assertj.core.util.Arrays;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.moc.common.ResultInfoUtil;
-import com.moc.common.ResultVO;
-import com.moc.product.entity.PO.ProductCategoryEntity;
+import com.moc.common.entity.ResultInfo;
 import com.moc.product.entity.VO.ProductInfoVO;
 import com.moc.product.mapper.ProductCategoryMapper;
 
@@ -26,7 +20,7 @@ public class ProductController {
 	
 	
 	 @GetMapping("/list")
-	 public ResultVO list() {
+	 public ResultInfo list() {
 		 ProductInfoVO  productInfoVO = new ProductInfoVO();
 		 
 		 
@@ -37,25 +31,25 @@ public class ProductController {
 		 
 	 }
 	
-	//cache缓存
-	//http://localhost:8080/moc/product/getProductCategorys
-	@RequestMapping("/getProductCategorys")
-	//@Cacheable(cacheNames = "product",key = "123" ,condition="#Id.length() > 3", unless="#result.getCode() != 0")
-	public ResultVO<List<ProductCategoryEntity>> getProductCategorys() {
-		
-		
-		List<ProductCategoryEntity> pes=productCategoryMapper.getAll();
-		
-		return ResultInfoUtil.success(pes);
-		
-		
-	}
-	
-    @RequestMapping("/getProductCategory")
-    public ProductCategoryEntity getProductCategory(Long id) {
-    	ProductCategoryEntity pe=productCategoryMapper.getOne(id);
-        return pe;
-    }
+//	//cache缓存
+//	//http://localhost:8080/moc/product/getProductCategorys
+//	@RequestMapping("/getProductCategorys")
+//	//@Cacheable(cacheNames = "product",key = "123" ,condition="#Id.length() > 3", unless="#result.getCode() != 0")
+//	public ResultInfo<List<ProductCategoryEntity>> getProductCategorys() {
+//		
+//		
+//		List<ProductCategoryEntity> pes=productCategoryMapper.getAll();
+//		
+//		return ResultInfoUtil.success(pes);
+//		
+//		
+//	}
+//	
+//    @RequestMapping("/getProductCategory")
+//    public ProductCategoryEntity getProductCategory(Long id) {
+//    	ProductCategoryEntity pe=productCategoryMapper.getOne(id);
+//        return pe;
+//    }
     
     
     

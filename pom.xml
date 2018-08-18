@@ -10,7 +10,8 @@
 
 	<name>moc</name>
 	<description>Demo project for Spring Boot</description>
-
+  <!-- 版本变量 -->
+ 	
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -22,6 +23,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<dozer-version>5.5.1</dozer-version>
 	</properties>
 
 	<dependencies>
@@ -68,6 +70,13 @@
 		    <artifactId>fastjson</artifactId>
 		    <version>1.2.47</version>
 		</dependency>
+		
+		 <!-- dozer -->
+		<dependency>
+			<groupId>net.sf.dozer</groupId>
+			<artifactId>dozer</artifactId>
+			<version>${dozer-version}</version>
+		</dependency>
 	
 		<dependency>
             <groupId>org.springframework.boot</groupId>
@@ -86,11 +95,34 @@
 		    <artifactId>spring-boot-starter-aop</artifactId>  
 		</dependency>
 		
-        <dependency>
+     <!--    <dependency>
          	<groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-devtools</artifactId>
 		 	<optional>true</optional>
         </dependency>
+         -->
+        
+        
+        <!-- 第三方 -->
+        
+   <!--      <dependency>
+	        <groupId>org.apache.httpcomponents</groupId>
+	        <artifactId>fluent-hc</artifactId>
+	        <version>4.5.5</version>
+      </dependency> -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
 	</dependencies>

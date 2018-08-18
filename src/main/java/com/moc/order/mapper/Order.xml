@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.moc.order.mapper.OrderMapper" >
-    <resultMap id="BaseResultMap" type="com.moc.order.entity.Order" >
+    <resultMap id="BaseResultMap" type="com.moc.order.entity.PO.Order" >
     <!--  主键用ID标签-->
         <id column="id" property="id" jdbcType="INTEGER" />
         <result column="icon_url" property="iconUrl" jdbcType="VARCHAR" />
