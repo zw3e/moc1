@@ -1,4 +1,4 @@
-package com.moc.user.VO;
+package com.moc.cumtomer.VO;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

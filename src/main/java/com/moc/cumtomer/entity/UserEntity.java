@@ -1,4 +1,4 @@
-package com.moc.user.entity;
+package com.moc.cumtomer.entity;
 
 import java.util.Date;
 

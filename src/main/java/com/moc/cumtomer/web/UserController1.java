@@ -1,12 +1,12 @@
-package com.moc.user.web;
+package com.moc.cumtomer.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.moc.user.entity.UserEntity;
-import com.moc.user.mapper.UserMapper;
+import com.moc.cumtomer.entity.UserEntity;
+import com.moc.cumtomer.mapper.UserMapper;
 
 @RestController
 @RequestMapping("/user1")
@@ -25,6 +25,14 @@ public class UserController1 {
 //       //  BeanUtils.co
 //		 return ResultInfoUtil.success(us);
 //	 }
+	
+	
+	@RequestMapping("/login")
+    public void login(UserEntity user) {
+    	userMapper.insert(user);
+    }
+	
+	
 	
     @RequestMapping("/add")
     public void save(UserEntity user) {

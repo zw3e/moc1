@@ -1,8 +1,8 @@
-package com.moc.user.mapper;
+package com.moc.cumtomer.mapper;
 
 import java.util.List;
 
-import com.moc.user.entity.UserEntity;
+import com.moc.cumtomer.entity.UserEntity;
 
 public interface UserMapper {
 
