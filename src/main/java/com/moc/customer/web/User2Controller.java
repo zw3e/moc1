@@ -1,4 +1,4 @@
-package com.moc.cumtomer.web;
+package com.moc.customer.web;
 
 import java.util.Map;
 import java.util.UUID;

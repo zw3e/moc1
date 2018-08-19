@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.moc.user.mapper.UserMapper" >
-    <resultMap id="BaseResultMap" type="com.moc.user.entity.UserEntity" >
+<mapper namespace="com.moc.customer.mapper.UserMapper" >
+    <resultMap id="BaseResultMap" type="com.moc.customer.entity.UserEntity" >
     <!--  主键用ID标签-->
         <id column="id" property="id" jdbcType="INTEGER" />
         <result column="icon_url" property="iconUrl" jdbcType="VARCHAR" />
