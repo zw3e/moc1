@@ -52,7 +52,7 @@ public class User2Controller {
 
         //2. 设置token至redis
         String token = UUID.randomUUID().toString();
-        Integer expire = RedisConstant.EXPIRE;
+        Integer expire = RedisConstant.TOKEN_EXPIRE_TIME;
 
         redisTemplate.opsForValue().set(String.format(RedisConstant.TOKEN_PREFIX, token), openid, expire, TimeUnit.SECONDS);
 

@@ -9,7 +9,7 @@ public class MerchantUserVO {
 	private Long id;
 	private String phone;
 	private String userName;
-	
+	private String token;
 	@JsonIgnore
 	private String password;
 	private String sex;
@@ -59,6 +59,12 @@ public class MerchantUserVO {
 	}
 	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
+	}
+	public String getToken() {
+		return token;
+	}
+	public void setToken(String token) {
+		this.token = token;
 	}
 	
 
